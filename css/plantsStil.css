@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#wraapper{
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: darkseagreen;
+    position: fixed;
+    z-index: 1;
+}
+
+#menu{
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+#logo{
+    flex: 20%;
+    text-align: start;
+    color: white;
+}
+
+#logo>h3{
+    line-height: 60px;
+}
+
+#logo>h3 span{
+    color: yellow;
+}
+
+#navMenu{
+    flex: 80%;
+    text-align: end;
+    color: white;
+}
+
+#menuToggle{
+    display: none;
+}
+
+#navMenu>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+#navMenu>ul li{
+    float: left;
+    position: relative;
+    width: 125px;
+    text-align: center;
+}
+
+#navMenu>ul li ul{
+    position: absolute;
+    background-color: darkseagreen;
+    display: none;
+}
+
+#navMenu>ul li:hover ul{
+    display: block;
+}
+
+#navMenu>ul li ul li{
+    width: 100%;
+    list-style: none;
+    
+}
+
+#navMenu>ul li ul li a{
+    padding: 10px;
+}
+
+#navMenu>ul li ul li a:hover{
+    background-color: green;
+    color: white;
+}
+
+#navMenu>ul li a{
+    display: block;
+    padding: 18px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#navMenu>ul li a:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+
+#center{
+    width: 100%;
+    z-index: -1;
+}
+
+#sectionOne{
+    display: flex; 
+    z-index: -1;
+}
+
+#secOneRow1{
+    flex:10%;
+    height: 800px;
+}
+
+#secOneRow1>h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#secOneRow2{
+    flex:80%;
+    height: 800px;
+    background-color: azure;
+    z-index: -1;
+}
+
+#secOneRow3{
+    flex:10%;
+    height: 800px;
+    text-align: center;
+    padding-top: 300px;
+    z-index: -1;
+}
+
+#imgSec{
+    position: relative;
+    width: 50px;
+    margin-left: 50px;
+}
+
+#imgSec>img{
+    width: 50px;
+}
+
+#textFollow{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 7px;
+    left: 80px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#imgSec:hover #textFollow{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#imgSec>img:hover{
+    cursor: pointer;
+}
+
+#secOneBack{
+    display: flex;
+    animation: animacija 2s; 
+}
+
+@keyframes animacija{
+    0%   {opacity: 0;}
+    10%   {opacity: 0.1;}
+    20%  {opacity: 0.2;}
+    30%  {opacity: 0.3;}
+    40%   {opacity: 0.4;}
+    50%  {opacity: 0.5;}
+    60%  {opacity: 0.6;}
+    70%   {opacity: 0.7;}
+    80%  {opacity: 0.8;}
+    90%  {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+
+#secOneBackOne{
+    flex: 45%;
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 150px;
+}
+
+.buttonSecOne{
+    width: 150px;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.buttonSecOne:hover{
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#secOneBackTwo{
+    flex: 45%;
+    padding: 20px;
+}
+
+#secOneBackTwo>img{
+    width: 350px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+#aboutUs{
+    width: 100%;
+    height: 570px;
+}
+
+#aboutUsRow{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+#aboutSecOne{
+    flex: 45%;
+    padding: 20px;
+}
+
+#aboutSecOne>img{
+    width: 500px;   
+}
+
+#aboutSecTwo{
+    flex: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#flipAbout{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: darkseagreen;
+    color: white
+}
+
+#flipAbout:hover{
+    cursor: pointer;
+}
+
+#panelAbout{
+    display: none;
+    background-color: darkseagreen;
+    height: 400px;
+}
+
+#panelAbout>p{
+    padding: 10px;
+    color: white;
+}
+
+#features{
+    width: 100%;
+    height: 650px;
+    background-color: azure;
+    z-index: -1;
+}
+
+#features>h2{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 80px;
+}
+
+#features>p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.featuresRows{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    z-index: -1;
+}
+
+.featureRow1{
+    flex: 33%;
+    position: relative;
+    overflow: hidden;
+}
+
+.featureText{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px;
+    width: 250px;
+    display: none;
+}
+
+.featureRow1:hover .featureText{
+    display: block;
+}
+
+#menuFeatures{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#menuFeatures>button{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    width: 120px;
+    background-color: darkseagreen;
+}
+
+#line{  
+    margin: 10px auto;
+    width: 600px;
+    height: 4px;
+    background-color: darkseagreen;
+}
+
+.featureRow1>img{
+    margin-top: 30px;
+    width: 98%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.featuresRowsOne{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.featuresRowsTwo{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.aktivno{
+    border: 2px solid black;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#ourHappyClients{
+    width: 100%;
+    height: 550px;
+}
+
+#ourHappy{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#client{
+    text-align: center;
+}
+
+#client1{
+    text-align: center;
+}
+
+#client2{
+    text-align: center;
+}
+
+#happyClient{
+    text-align: center;
+}
+
+#happyClient>h2{
+    padding-top: 40px;
+    font-size: 50px;
+}
+
+#happyClient>h6{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#client>p{
+    padding: 50px 100px;
+}
+
+#client1>p{
+    padding: 50px 100px;
+}
+
+#client2>p{
+    padding: 50px 100px;
+}
+
+#client>h4{
+    padding-top: 30px;
+}
+
+#client1>h4{
+    padding-top: 30px;
+}
+
+#client2>h4{
+    padding-top: 30px;
+}
+
+#textAndPic>img{
+    width: 50px;
+    padding-right: 20px;
+}
+
+#secClient{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#secClient>div:hover{
+    cursor: pointer;
+}
+
+#secClient>div{
+    background-color: darkseagreen;
+}
+
+#clientOne{
+    width: 60px;
+    height: 4px;
+    background-color: darkseagreen;
+}
+
+#clientTwo{
+    width: 60px;
+    height: 4px;
+    background-color: darkseagreen;
+}
+
+#clientThree{
+    width: 60px;
+    height: 4px;
+    background-color: darkseagreen;
+}
+
+.aktivnoClient{
+    border: 2px solid black;
+}
+
+#ourBlog{
+    width: 100%;
+    height: 1020px;
+    background-color: azure;
+}
+
+#blogSection{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+#sectionBlog{
+    text-align: center;
+}
+
+#sectionBlog>h2{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+#sectionBlog>h6{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+#hrBlogSec{
+    width: 300px;
+    height: 4px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+.blogSecOne{
+    display: flex;
+}
+
+.blogImg{
+    flex: 45%;
+}
+
+.blogText{
+    flex: 45%;
+    padding: 90px 20px;
+}
+
+.blogImg>img{
+    width: 100%;;
+    height: 400px;
+}
+
+.blogText>h4{
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#textBlogP1{
+    padding-left: 10px;
+}
+
+#textBlogP2{
+    padding-left: 10px;
+}
+
+.imgBlogtext{
+    width: 20px;
+}
+
+.textBlogP3{
+    float: left;
+    padding-left: 10px;
+}
+
+#blogSecTwo{
+    display: flex;
+}
+
+.blogText>h4:hover{
+    color: darkseagreen;
+    cursor: pointer;
+}
+
+#plantsCard{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cards{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.cardsSec{
+    margin: 30px auto;
+    padding-top: 45px;
+}
+
+.card-img-top{
+    height: 250px;
+}
+
+.btn{
+    background-color: darkseagreen;
+    width: 150px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: green;
+    color: white;
+    font-size: 18px;
+}
+
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: darkseagreen;
+    padding-top: 40px;
+}
+
+#footer>h1{
+    text-align: center;
+}
+
+#footerText{
+    text-align: center;
+}
+
+#footerText>a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#footerText>a:hover{
+    color: white;
+}
+
+#colorTextFot{
+    color: yellow;
+}
